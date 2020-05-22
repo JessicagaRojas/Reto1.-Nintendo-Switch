@@ -1,43 +1,83 @@
 
 /*ELEMENTOS*/
 
+ body {
+     background-color: violet;
+ }
+
  .contenedor {
      display:flex;
+     position: relative;
      flex-direction: row;
      justify-content: center;
      margin-top: 15em;
  }
 
- .mando1 {
-      display:flex;
-      flex-direction: column;
-      background-color: blue;
+
+ .joycon-izq {
+     display:flex;
+     flex-direction: column;
+     background-color: #B7EFCD;
      width: 6em;
      height: 20em;
-     border-radius: 50px;
+     border-radius: 50px 0px 0px 50px;
     justify-content: flex-start;
  }
 
+ #boton-L {
+    position: absolute;
+    top: 10%;
+    right: 90%;
+    width: 2%;
+    height: 1.8%;
+    background: #3a3a3a;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 1px rgba(255,255,255,.4), 0 0 0 1px #2b2b2b, 1px 2px 10px rgba(0,0,0,.5);
+  }
+  
+
  #boton-izq {
-    display:flex;
-    color: black;
-    flex-direction: column;
-    height: 5em;
-    width: 5em;
-    border-radius: 50%;
-    margin-right: 5em; 
+     display:flex;
+     flex-direction: column;
+     height: 5em;
+     width: 5em;
+     border-radius: 50%;
+     margin: 5em 2em;
+     background: #3a3a3a;
+     box-shadow: inset 1px 1px 1px rgba(255,255,255,.4), 0 0 0 1px #2b2b2b, 1px 2px 10px rgba(0,0,0,.5);
+   }
+
+   #boton-home {
+    position: absolute;
+    margin: 14em 3.5em;
+    width: 2.5%;
+    height: 6%;
+    background: #3a3a3a;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,.3), 0 0 0 2px #262525, 1px 2px 8px rgba(0,0,0,.5);
 }
 
- .mando2 {
+ .joycon-der {
      display:flex;
      flex-direction: column-reverse;
-     background-color: red;
+     background-color: #5FDDE5;
      width: 6em;
      height: 20em;
-     border-radius: 50px;
+     border-radius: 0px 50px 50px 0px;
  }
 
- 
+ #boton-der {
+    display:flex;
+    flex-direction: column;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin: 10em 2em;
+    background: #3a3a3a;
+    box-shadow: inset 1px 1px 1px rgba(255,255,255,.4), 0 0 0 1px #2b2b2b, 1px 2px 10px rgba(0,0,0,.5);
+  }
+
+
 
  #pantalla-negra {
     display:flex;
